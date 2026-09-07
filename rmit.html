@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <title>FOR YOU</title>
+        <style>
+            .rmitbox{
+                width:100%;
+                height:600px;
+                background-color:rgb(179, 175, 175) ;
+                display: flex;
+                flex-direction:column;
+                align-items:flex-start;
+                justify-content:space-between;
+                background-image: url(images/vtac-26-homepage-sl-1400x580.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position:center;
+            }
+            .remita{
+                width:100%;
+                height:100px;
+                display: flex;
+                flex-direction:row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+            }
+            .studybox{
+                width: 150px;
+                background-color: white;
+                height: 80px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .schoolbox{
+                width: 100%;
+                height: 200px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+            }
+            .prefer{
+                width: 550px;
+                height:180px;
+                margin: 20px;
+                color: white;
+            }
+            .preference{
+                width: 700px;
+                height: 180px;
+                display: flex;
+                flex-direction:column ;
+                align-items: center;
+                justify-content: space-between;
+                margin: 50px;
+            }
+            .nybox{
+                width: 400px;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+            }
+            .fybox{
+                width: 110px;
+                height: 40px;
+                background-color: white;
+                margin: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: solid red;
+                padding: 10px 0px;
+                row-gap: 10px;
+            }
+            input{
+                width:350px;
+                border-radius: 20px;
+                padding: 10px;
+            }
+            
+            .colorbox{
+                width: 100%;
+                height: 500px;
+                background-color: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .redbox{
+                width: 900px;
+                height: 400px;
+                display: flex;
+                background-color: white;
+                border-top: solid red;
+                align-items: flex-start;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .whitebox{
+                width: 300px;
+                height: 70px;
+                background-color: white;
+            }
+            .blackbox{
+                width: 800px;
+                height: 300px;
+                display: flex;
+                background-color: white;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .greybox{
+                width: 300px;
+                height: 250px;
+                display: block;
+                align-items:center;
+                justify-content: center;
+                margin:10px ;
+            }
+            .agricbox{
+                width: 100%;
+                height: 600px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                background-color: white;
+            }
+            .enterprisebox{
+                width: 1000px;
+                height: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 40px;
+            }
+            .seedbox{
+                width: 1000px;
+                height: 350px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                 background-color: white;
+                flex-direction: row;
+            }
+            .innovationbox{
+                width: 350px;
+                height: 250px;
+                border: 2px solid black;
+                margin: 10px;
+            }
+             .growthbox{
+                width: 350px;
+                height: 250px;
+                border: 2px solid black;
+                margin: 10px;
+            }
+            .handbox{
+                width: 350px;
+                height: 250px;
+                border: 2px solid black;
+                margin: 10px;
+            }
+            .webox{
+                width: 100%;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content:center;
+                text-align: center;
+            }
+            .transferbox{
+                width: 100%;
+                height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+            .imagebox{
+                width: 550px;
+                height: 500px;
+                display: flex;
+                margin: 20px;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            .teabox{
+                width:550px ;
+                height:300px;
+                margin: 10px;
+                background-image: url(images/transfer-student-expo-1440x864.jpg);
+                background-repeat:no-repeat ;
+                background-size: cover;
+                background-position: center;
+            }
+            .textbox{
+                width: 550px;
+                height: 150px;
+                margin: 10px;
+            }
+            .internbox{
+                width: 400px;
+                height: 500px;
+                display: flex;
+                margin: 20px;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .pathbox{
+                width: 400px;
+                height:300px;
+                margin: 10px;
+                background-image:url(images/pathways-cover.png) ;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .optionbox{
+                width: 550px;
+                height: 150px;
+                margin: 10px;
+            }
+            .labbox{
+                width: 100%;
+                height: 600px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .workersbox{
+                width:980px;
+                height: 500px;
+                background-image: url(images/application-info\ \(1\).jpg);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+            .localbox{
+                width: 500px;
+                height: 200px;
+                background-color: red;
+                color: white;
+                display: flex;
+                align-items:flex-start;
+                justify-content: center;
+                flex-direction: column;
+                padding: 20px;
+            }
+            button{
+                width: 30%;
+                height: 40px;
+                border-radius: 25px;
+            }
+            .manbox{
+                width: 100%;
+                height: 700px;
+                background-color: white;
+                flex-direction: row;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .specbox{
+                display: flex;
+                width: 610px;
+                height: 400px;
+                background-image:url(images/news-vaccinepatch2-1220x732px.jpg) ;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .newsbox{
+                display: flex;
+                width: 300px;
+                height: 340px;
+                padding:30px;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+            }
+            .mrna{
+                width: 200px;
+                height: 50px;
+                display: flex;
+            }
+            .flagbox{
+                width: 100%;
+                height:700px;
+                display: flex;
+                background-color: aliceblue;
+                align-items: flex-start;
+                justify-content: center;
+                flex-direction: column;
+                padding: 70px;
+            }
+            .japanbox{
+                width: 300px;
+                height: 100px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 20px;
+            }
+            .woobox{
+                width: 100px;
+                height: 70px;
+                background-image: url(images/flag-red.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
+            .kulinbox{
+                width: 100px;
+                height: 70px;
+                background-image: url(images/flag-green.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                margin: 10px;
+            }
+            .chinabox{
+                width: 1000px;
+                height: 700px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                margin: 10px;
+            }
+            .jungbox{
+                width: 600px;
+                height: 500px;
+                display: flex;
+                align-items:flex-start;
+                justify-content:center;
+                padding: 20px;
+                flex-direction: column;
+            }
+            .wungbox{
+                width:450px;
+                height: 400px;
+                display: flex;
+                background-image: url(images/sentient-hollie-johnson.jpg);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                margin: 20px;
+            }
+            .copybox{
+                width: 100%;
+                height: 700px;
+                display: flex;
+                flex-direction: column;
+                background-color:blue;
+                align-items: center;
+                justify-content: center;
+            }
+            .accessbox{
+                width: 1000px;
+                height:500px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 10px;
+            }
+            .accesbilitybox{
+                width: 900px;
+                height:200px;
+                justify-content: flex-start;
+                align-items: flex-start;
+                margin: 20px;
+                flex-direction:row;
+                padding: 20px;
+                color: white;
+            }
+            .wrightbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction:column;
+                align-items:flex-start;
+                justify-content: center;
+                margin:20px;
+                color: white;
+            }
+            .rightbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: center;
+                margin: 20px;
+                color: white;
+            }
+            .ightbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: center;
+                margin: 20px;
+                color: white;
+            }
+            .ghtbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: center;
+                margin: 20px;
+                color: white;
+            }
+            .htbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: center;
+                margin: 20px;
+                color: white;
+            }
+            .tbox{
+                width: 200px;
+                height: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items:flex-start;
+                justify-content: center;
+                margin: 20px;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="rmitbox">
+            <div class="remita">
+                <div class="studybox">
+                    <h3>Courses</h3>
+                </div>
+                <div class="studybox">
+                    <h3>Study with us</h3>
+                </div>
+                <div class="studybox">
+                    <h3>Life at Rmit</h3>
+                </div>
+                <div class="studybox">
+                    <h3>About</h3>
+                </div>
+                <div class="studybox">
+                    <h3>Research</h3>
+                </div>
+                <div class="studybox">
+                    <h3>Partner</h3>
+                </div>
+                <div class="studybox">
+                    <h3>international</h3>
+                </div>  
+            </div>
+            <div class="schoolbox">
+                <div class="prefer">
+                    <h3>Preference RMIT</h3>
+                    <p>Only at Rmit can you put theory into practice,build industry connections <br>and get real-world experience from day one.</p>
+                    <p>Learn more <hr></p>
+                </div>
+                <div class="preference">
+                    <div class="nybox">
+                        <div class="fybox">
+                            <h3>Study</h3>
+                        </div>
+                        <div class="fybox">
+                            <h3>Research</h3>
+                        </div>
+                        <div class="fybox">
+                            <h3>Partner</h3>
+                        </div>
+                    </div>
+                        <input type="search" placeholder="seach courses" name="search courses">
+                </div>
+            </div>
+        </div>
+        <div class="colorbox">
+            <div class="redbox">
+                <div class="whitebox">
+                    <h3>What would you like to study</h3>
+                </div>
+                <div class="blackbox">
+                    <div class="greybox">
+                        <p>Architecture</p>
+                        <p>Biomedical sciences</p>
+                        <p>Communication</p>
+                        <p>Engineering</p>
+                        <p>Health</p>
+                        <p>Media</p>
+                        <p>Science</p>
+                    </div>
+                    <div class="greybox">
+                        <p>Art</p>
+                        <p>Building</p>
+                        <p>Design</p>
+                        <p>Environment</p>
+                        <p>Information Technology</p>
+                        <p>Property</p>
+                        <p>Social and community</p>
+                    </div>
+                    <div class="greybox">
+                        <p>Aviation</p>
+                        <p>Business</p>
+                        <p>Education</p>
+                        <p>Fashion</p>
+                        <p>Law</p>
+                        <p>Psychology</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="agricbox">
+            <div class="enterprisebox">
+                <h1>RMIT is an international university of technology, design and enterprise</h1>
+            </div>
+            <div class="seedbox">
+                <div class="innovationbox"><br><br><br><br><br><br><br><br>
+                <h3>3000+ scholarships</h3>
+                <p>awarded to our student in 2023</p>
+                </div>
+                <div class="growthbox"><br><br><br><br><br><br><br><br>
+                    <h3>24,245 placements</h3>
+                    <p>with industry for students in 2024</p>
+                </div>
+                <div class="handbox"><br><br><br><br><br><br><br><br>
+                    <h3>Ranked #5in the world </h3>
+                    <p>for reducing inequality</p>
+                </div>
+            </div>
+        </div>
+        <div class="webox">
+            <h3>More reputation and rankings> </h3>
+        </div>
+        <div class="transferbox">
+            <div class="imagebox">
+                <div class="teabox"></div>
+                <div class="textbox">
+                    <h3>Transfer to RMIT</h3>
+                    <p>start building connections with employers, gaining hands-on skils and <br>industry experience</p>
+                </div>
+            </div>
+            <div class="internbox">
+                <div class="pathbox"></div>
+                <div class="optionbox">
+                    <h3>Pathway options</h3>
+                    <p>RMIT is a dual-sector university offering recognised pathway options,<br>allowing you to study vocational courses that lead on to undergraduate<br>study.</p>
+                </div>
+            </div>
+        </div>
+        <div class="labbox">
+            <div class="workersbox">
+                <div class="localbox">
+                    <h3>Local student applications </h3>
+                    <p>Here's everything you need to know about how to apply to study at<br>RMIT.Apply direct or via VTAC</p>
+                    <button>Get started</button>
+                </div>
+            </div>
+        </div>
+        <div class="manbox">
+            <div class="specbox"></div>
+            <div class="newsbox">
+                <h3>New study advances dry <br>mRNA vacciene patch design</h3>
+                <p>New research could help make future mRNA<br>vaccine  easier to store and distribute.</p>
+                <p>Read the story ></p>
+            </div>
+        </div>
+        <div class="flagbox">
+            <div class="japanbox">
+                <div class="woobox"></div>
+                <div class="kulinbox"></div>
+            </div>
+            <div class="chinabox">
+                <div class="jungbox">
+                    <h3>Acknowledgement of country</h3>
+                    <p>RMIT University acknowledges the people of the Woi wurrung and <br>Boon wurrung language groups of the eastern Kulin Nation on whose <br> unceded land we conduct the business of the University. RMIT <br> University respectfully acknowledges their Ancestors and Elders,past<br>and present.RMIT also acknowledges the Treaditional Custodians and <br> their ancestors of the lands and waters across Australia where we<br>conduct our business- Artworks 'sentiments' by Holie Johnson,<br> Gunaikaurnai and Monero Ngarigo.</p><br><br><br><br>
+                    <p> Learn more about our community to Aboriginal and Torres  ></p>
+                    <p>Strait Islander peoples.</p>
+                </div>
+                <div class="wungbox"></div>
+            </div> 
+        </div>
+        <div class="copybox">
+            <div class="accessbox">
+            <div class="wrightbox">
+                <h3>RMIT <br>UNIVERSITY</h3>
+                <p>News</p>
+                <p>Events</p>
+                <p>Library</p>
+                <p>Maps</p>
+                <p>Careers</p>
+                <p>Contacts</p>
+            </div>
+            <div class="rightbox">
+                <p>Study with us</p>
+                <p>Levels of study</p>
+                <p>Online courses and<br>degrees</p>
+                <p>Applying to RMIT</p>
+                <p>International students</p>
+                <p>Parents</p>
+                <p>Careers advisers</p>
+            </div>
+            <div class="ightbox">
+                <p>Life ar RMIT</p>
+                <p>Study experience</p>
+                <p>Studen life</p>
+                <p>Supports for <br>students</p>
+                <p>Global oppurtunities</p>
+                <p>Industry<br>connections</p>
+            </div>
+            <div class="ghtbox">
+                <p>Research</p>
+                <p>Our research</p>
+                <p>Centres and <br>collaborations</p>
+                <p>Partnership</p>
+                <p>Research degrees</p>
+                <p>Find researches</p>
+                <p>Research contacts</p>
+            </div>
+            <div class="htbox">
+                <p>Partner</p>
+                <p>Workforce<br>developments</p>
+                <p>Staff developments<br>and training</p>
+                <p>Research <br>partnerships</p>
+                <p>Facilities and <br>equipments services</p>
+                <p>Giving</p>
+            </div>
+            <div class="tbox">
+                <p>About</p>
+                <p>Our strategy</p>
+                <p>Governance aaand <br>managements</p>
+                <p>Values</p>
+                <p>Sustainability</p>
+                <p>Schools and colleges</p>
+                <p>Our locations and<br>facilities</p>    
+            </div>
+            </div>
+            <div class="accesbilitybox">
+                <hr>
+                <p>copyright@ 2026 RMIT University|Terms|Pricvacy|Accesibility|website feedback|<br>complaint|ABN 49 781 030 034| CIRICOS provider number:00122A</p>
+            </div>
+        </div>
+    </body>
+</html>
